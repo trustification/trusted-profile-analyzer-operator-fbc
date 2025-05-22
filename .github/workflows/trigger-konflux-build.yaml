@@ -4,7 +4,7 @@ on:
 
 jobs:
   trigger-konflux-build:
-    uses: securesign/actions/.github/workflows/trigger-konflux-build.yaml@main
+    uses: trustification/actions/.github/workflows/trigger-konflux-build.yaml@main
     with:
       branch: main
     secrets:
