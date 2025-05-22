@@ -1,0 +1,15 @@
+name: rhtpa-operator
+repository: rhbk/keycloak-operator-bundle
+konflux:
+  namespace: trusted-content
+  prefix: rhtpa-fbc
+  github: trustification/trusted-profile-analyzer-operator-fbc
+ocp:
+  - v4.18
+replacements:
+  - from: quay.io/mdessi/rhtpa-rhel9-operator-bundle
+    to: registry.redhat.io/rhtpa/rhtpa-rhel9-operator-bundle
+  - from: quay.io/mdessi/rhtpa-rhel9-operator
+    to: registry.redhat.io/rhtpa/rhtpa-rhel9-operator
+bundles:
+  - sha256:0b5a80a1db8b8db8143c6a487f57006c86412df8c9c26d4aa61eea2cf1079332
