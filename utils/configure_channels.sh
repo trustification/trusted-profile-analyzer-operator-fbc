@@ -2,7 +2,7 @@
 set -euo pipefail
 
 export BUNDLE_NAME="rhtpa-operator.v1.0.0"
-export CHANNELS="stable,stable-v2.0"
+export CHANNELS="stable,stable-v1.0"
 export GRAPH="./../v4.18/graph.yaml"
 
 #export PACKAGE_NAME=$(yq e '.entries[] | select(.schema=="olm.package") | .name' $GRAPH)
