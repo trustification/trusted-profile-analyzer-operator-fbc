@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# OCP_VERSION="v4.13"
-# CATALOG_FILE="v4.13/catalog/rhtpa-operator/catalog.json"
+OCP_VERSION="v4.18"
+CATALOG_FILE="./../${OCP_VERSION}/catalog/rhtpa-operator/catalog.json"
 
 minor=${OCP_VERSION#v4.}
 minor=${minor%%.*}
@@ -11,7 +11,7 @@ minor=${minor%%.*}
 related_images=$(jq -s '
 reduce .[] as $item ({};
     if ($item.schema == "olm.bundle" and
-        $item.name != "rhtpa-operator.v2.0.1" and
+        $item.name != "rhtpa-operator.v1.0.0" and
         (
         ($item.name | contains("v1.0.0")) or
         ($item.name | contains("v1.0.1")) or
@@ -31,7 +31,7 @@ if (( minor >= 17 )); then
     migrate_flag="--migrate-level=bundle-object-to-csv-metadata"
 fi
 
-opm alpha render-template $migrate_flag basic "${OCP_VERSION}/graph.yaml" > "$CATALOG_FILE"
+opm alpha render-template $migrate_flag basic "./../catalog/${OCP_VERSION}/graph.yaml" > "$CATALOG_FILE"
 
 jq -s --indent 4 --argjson related_images "$related_images" '
     map(
