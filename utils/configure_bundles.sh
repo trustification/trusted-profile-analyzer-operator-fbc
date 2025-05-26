@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# export BUNDLE_IMAGE="quay.io/trustification/rhtpa-operator-bundle@sha256:a1c9dc1bbe50e2bff631ab0a9a9c06dfdbf45f42202d5e74e43c9ea571a8fc56"
-# export BUNDLE_NAME="rhtpa-operator.v2.0.1"
-# export GRAPH="v4.13/graph.yaml"
+BUNDLE_IMAGE="quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:0b5a80a1db8b8db8143c6a487f57006c86412df8c9c26d4aa61eea2cf1079332"
+BUNDLE_NAME="rhtpa-operator.v1.0.0"
+GRAPH="./../v4.18/graph.yaml"
 
 BUNDLE="$(yq e '(.entries[] | select(.schema=="olm.bundle" and .name=="'"$BUNDLE_NAME"'"))' $GRAPH)"
 if [[ -n "$BUNDLE" ]]; then

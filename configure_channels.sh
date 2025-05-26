@@ -1,12 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
-export BUNDLE_NAME="rhtpa-operator.v1.0.0"
-export CHANNELS="stable,stable-v2.0"
-export GRAPH="./../v4.18/graph.yaml"
+#export BUNDLE_NAME="rhtpa-operator.v1.0.0"
+#export CHANNELS="stable,stable-v1.0"
+#export GRAPH="catalog/v4.18/graph.yaml"
 
 #export PACKAGE_NAME=$(yq e '.entries[] | select(.schema=="olm.package") | .name' $GRAPH)
-export PACKAGE_NAME='rhtpa-operator'
+export PACKAGE_NAME=rhtpa-operator
 IFS=',' read -ra channel_list <<< "$CHANNELS"
 for channel in "${channel_list[@]}"; do
   echo "Processing channel: $channel"
@@ -46,7 +46,7 @@ for channel in "${channel_list[@]}"; do
           "name": env(BUNDLE_NAME)
         }],
         "name": env(channel),
-        "package": env(PACKAGE_NAME),
+        "package": rhtpa-operator,
         "schema": "olm.channel"
       }] + .[1:])
   ' $GRAPH
