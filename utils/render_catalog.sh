@@ -31,7 +31,7 @@ if (( minor >= 17 )); then
     migrate_flag="--migrate-level=bundle-object-to-csv-metadata"
 fi
 
-opm alpha render-template $migrate_flag basic "./../catalog/${OCP_VERSION}/graph.yaml" > "$CATALOG_FILE"
+opm alpha render-template $migrate_flag basic "./../${OCP_VERSION}/graph.yaml" > "$CATALOG_FILE"
 
 jq -s --indent 4 --argjson related_images "$related_images" '
     map(
