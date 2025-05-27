@@ -1,4 +1,9 @@
 {
+    "schema": "olm.package",
+    "name": "rhtpa-operator",
+    "defaultChannel": "stable"
+}
+{
     "schema": "olm.channel",
     "name": "stable",
     "package": "rhtpa-operator",
