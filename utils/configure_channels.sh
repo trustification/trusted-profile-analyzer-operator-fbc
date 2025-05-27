@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euo pipefail
-
+OCP_VERSION="v4.18"
 export BUNDLE_NAME="rhtpa-operator.v1.0.0"
 export CHANNELS="stable,stable-v1.0"
-export GRAPH="./../v4.18/graph.yaml"
+export GRAPH="./../${OCP_VERSION}/graph.yaml"
 
 #export PACKAGE_NAME=$(yq e '.entries[] | select(.schema=="olm.package") | .name' $GRAPH)
 export PACKAGE_NAME='rhtpa-operator'
