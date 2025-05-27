@@ -17,6 +17,6 @@ LABEL operators.operatorframework.io.bundle.package.v1=rhtpa-operator
 LABEL operators.operatorframework.io.bundle.channels.v1=stable,stable-v1.0
 LABEL operators.operatorframework.io.metrics.builder=operator-sdk-v1.39.2
 LABEL operators.operatorframework.io.metrics.mediatype.v1=metrics+v1
-LABEL operators.operatorframework.io.metrics.project_layout=go.kubebuilder.io/v3
+LABEL operators.operatorframework.io.metrics.project_layout=go.kubebuilder.io/v4
 LABEL operators.operatorframework.io.index.configs.v1=/configs
 
