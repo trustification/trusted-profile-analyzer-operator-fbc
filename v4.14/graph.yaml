@@ -1,0 +1,18 @@
+schema: olm.template.basic
+entries:
+  - defaultChannel: stable
+    name: rhtpa-operator
+    schema: olm.package
+  - image: quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:e29a4432d4a0fea92f63f4787e722ae843a6ee69172b477079f26c899a3f9ea3
+    name: rhtpa-operator.v1.0.0
+    schema: olm.bundle
+  - entries:
+      - name: rhtpa-operator.v1.0.0
+    name: stable-v1.0
+    package: rhtpa-operator
+    schema: olm.channel
+  - entries:
+      - name: rhtpa-operator.v1.0.0
+    name: stable
+    package: rhtpa-operator
+    schema: olm.channel
