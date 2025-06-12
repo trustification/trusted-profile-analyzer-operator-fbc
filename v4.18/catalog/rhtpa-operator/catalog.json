@@ -27,7 +27,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.0",
     "package": "rhtpa-operator",
-    "image": "quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-1-0-z@sha256:0df36cba6289fe01f48d7463c2f4190a71879cf505257c12e6d8880fda83eb7b",
+    "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator-bundle@sha256:0df36cba6289fe01f48d7463c2f4190a71879cf505257c12e6d8880fda83eb7b",
     "properties": [
         {
             "type": "olm.gvk",
@@ -50,7 +50,7 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"charts.rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {\n        \"deployment\": {\n          \"enabled\": false\n        }\n      },\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:3d17f211ae1272d4179adb8a152b0fd5ab6eabcacf1e52ecf87a329d93044eb3\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "quay.io/redhat-user-workloads/trusted-content-tenant/operator-1-0-z@sha256:cb26e4177045145f659cc267ed6d77106b40044a61c68db99c9128301591c71d",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:cb26e4177045145f659cc267ed6d77106b40044a61c68db99c9128301591c71d",
                     "createdAt": "2025-05-14T10:10:42Z",
                     "operators.operatorframework.io/builder": "operator-sdk-v1.39.2",
                     "operators.operatorframework.io/project_layout": "helm.sdk.operatorframework.io/v1",
@@ -115,11 +115,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-1-0-z@sha256:0df36cba6289fe01f48d7463c2f4190a71879cf505257c12e6d8880fda83eb7b"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator-bundle@sha256:0df36cba6289fe01f48d7463c2f4190a71879cf505257c12e6d8880fda83eb7b"
         },
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/trusted-content-tenant/operator-1-0-z@sha256:cb26e4177045145f659cc267ed6d77106b40044a61c68db99c9128301591c71d"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:cb26e4177045145f659cc267ed6d77106b40044a61c68db99c9128301591c71d"
         }
     ]
 }

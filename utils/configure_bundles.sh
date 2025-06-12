@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 OCP_VERSION="v4.18"
-BUNDLE_IMAGE="quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-1-0-z@sha256:0df36cba6289fe01f48d7463c2f4190a71879cf505257c12e6d8880fda83eb7b"
+BUNDLE_IMAGE="registry.redhat.io/rhtpa/rhtpa-rhel9-operator-bundle@sha256:0df36cba6289fe01f48d7463c2f4190a71879cf505257c12e6d8880fda83eb7b"
 BUNDLE_NAME="rhtpa-operator.v1.0.0"
 GRAPH="./../${OCP_VERSION}/graph.yaml"
 
