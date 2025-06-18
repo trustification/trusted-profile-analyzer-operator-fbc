@@ -52,7 +52,7 @@
                     "capabilities": "Basic Install",
                     "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:cb26e4177045145f659cc267ed6d77106b40044a61c68db99c9128301591c71d",
                     "createdAt": "2025-05-14T10:10:42Z",
-                    "operators.operatorframework.io/builder": "operator-sdk-v1.39.2",
+                    "operators.operatorframework.io/builder": "operator-sdk-v1.40.0",
                     "operators.operatorframework.io/project_layout": "helm.sdk.operatorframework.io/v1",
                     "repository": "https://github.com/trustification/trusted-profile-analyzer-operator",
                     "support": "Red Hat"
