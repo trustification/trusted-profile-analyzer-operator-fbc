@@ -24,8 +24,10 @@ spec:
     value: '{{revision}}'
   - name: output-image
     value: quay.io/redhat-user-workloads/trusted-content-tenant/rhtpa-fbc-v418:{{revision}}
+  - name: path-context
+    value: v4.18  
   - name: dockerfile
-    value: https://github.com/trustification/trusted-profile-analyzer-operator-fbc/blob/main/v4.18/catalog.Dockerfile
+    value: catalog.Dockerfile
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
