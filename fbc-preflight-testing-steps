@@ -11,15 +11,15 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: CatalogSource
 metadata:
-  name: rhtas-operator
+  name: rhtpa-operator
   namespace: openshift-marketplace
 spec:
   sourceType: grpc
   grpcPodConfig:
     securityContextConfig: legacy
   publisher: Red Hat
-  image: quay.io/grpereir/redhat-operator-index:$FBC_VERSION
-  displayName: TAS Operator
+  image: https://quay.io/repository/mdessi/redhat-operator-index:$FBC_VERSION
+  displayName: RHTPA Operator
 '
 # 7. apply the CS:              oc apply -f ./catalogSource.yaml
 # 8. delete the catalog-operator pod:  CATALOG_OPERATOR_POD=$oc get pods -n openshift-operator-lifecycle-manager | grep catalog-operator | awk '{print $1}') && oc delete pod $CATALOG_OPERATOR_POD -n openshift-operator-lifecycle-manage
