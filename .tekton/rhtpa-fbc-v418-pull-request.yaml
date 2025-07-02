@@ -26,7 +26,7 @@ spec:
     - name: output-image
       value: quay.io/redhat-user-workloads/trusted-content-tenant/rhtpa-fbc-v418:on-pr-{{revision}}
     - name: image-expires-after
-      value: 5d
+      value: 4d
     - name: build-platforms
       value:
         - linux/x86_64
