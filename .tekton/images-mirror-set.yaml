@@ -1,0 +1,13 @@
+---
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageDigestMirrorSet
+metadata:
+  name: registries
+spec:
+  imageDigestMirrors:
+    - mirrors:
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-1-0-z
+      source: registry.redhat.io/rhtpa/rhtpa-rhel9-operator
+    - mirrors:
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-1-0-z
+      source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
