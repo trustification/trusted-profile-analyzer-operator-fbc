@@ -88,7 +88,7 @@
         },
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:298207976b7500ed8c3859764360523318681eb5a54e0a7a600d876d28a3a95a"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:0964cd232e249c8bf8a48bcb73106bdc328a34f8e6d7781f19d896e31c4f2946"
         }
     ]
 }
