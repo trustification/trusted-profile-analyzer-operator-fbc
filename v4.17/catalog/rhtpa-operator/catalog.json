@@ -54,7 +54,7 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"charts.rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {\n        \"deployment\": {\n          \"enabled\": false\n        }\n      },\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:3d17f211ae1272d4179adb8a152b0fd5ab6eabcacf1e52ecf87a329d93044eb3\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:54a20c12e6e5c5789e180a9f00b8b9a50ae67067148e5eee97c96734c12258b1",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:1fc41dad29a7a1c3dd85ba98551e7bded6615fa68ad658f0c0910143b62e454d",
                     "createdAt": "2025-05-14T10:10:42Z",
                     "operators.operatorframework.io/builder": "operator-sdk-v1.40.0",
                     "operators.operatorframework.io/project_layout": "hybrid.helm.sdk.operatorframework.io/v1-alpha",
@@ -135,7 +135,7 @@
         },
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:54a20c12e6e5c5789e180a9f00b8b9a50ae67067148e5eee97c96734c12258b1"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:1fc41dad29a7a1c3dd85ba98551e7bded6615fa68ad658f0c0910143b62e454d"
         }
     ]
 }
