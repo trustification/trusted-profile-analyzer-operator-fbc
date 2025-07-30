@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
-OCP_VERSION="v4.18"
-CATALOG_FILE="./../${OCP_VERSION}/catalog/rhtpa-operator/catalog.json"
+# change this ocp value accordingly to the ocp catalog you want
+OCP_VERSION="v4.16"
+CATALOG_FILE="./${OCP_VERSION}/catalog/rhtpa-operator/catalog.json"
 
 minor=${OCP_VERSION#v4.}
 minor=${minor%%.*}
@@ -31,7 +31,7 @@ if (( minor >= 17 )); then
     migrate_flag="--migrate-level=bundle-object-to-csv-metadata"
 fi
 
-opm alpha render-template $migrate_flag basic "./../${OCP_VERSION}/graph.yaml" > "$CATALOG_FILE"
+opm alpha render-template $migrate_flag basic "./${OCP_VERSION}/graph.yaml" > "$CATALOG_FILE"
 
 jq -s --indent 4 --argjson related_images "$related_images" '
     map(
