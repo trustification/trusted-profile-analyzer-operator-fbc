@@ -36,7 +36,7 @@
         {
             "type": "olm.gvk",
             "value": {
-                "group": "charts.rhtpa.io",
+                "group": "rhtpa.io",
                 "kind": "TrustedProfileAnalyzer",
                 "version": "v1"
             }
@@ -109,7 +109,7 @@
             "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:18d93fc5146044745ed3b1ff02cfaf03acc10d69a786345591cd31a68bb21e79"
         },
         {
-            "name": "",
+            "name": "manager",
             "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:fd1000bf264334c1944bd8ddd080f2983f080c64a864d7117d279ee13f4e7e00"
         },
         {
