@@ -36,7 +36,7 @@
         {
             "type": "olm.gvk",
             "value": {
-                "group": "charts.rhtpa.io",
+                "group": "rhtpa.io",
                 "kind": "TrustedProfileAnalyzer",
                 "version": "v1"
             }
@@ -52,12 +52,10 @@
             "type": "olm.csv.metadata",
             "value": {
                 "annotations": {
-                    "alm-examples": "[\n  {\n    \"apiVersion\": \"charts.rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {\n        \"deployment\": {\n          \"enabled\": false\n        }\n      },\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:3d17f211ae1272d4179adb8a152b0fd5ab6eabcacf1e52ecf87a329d93044eb3\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
                     "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:fd1000bf264334c1944bd8ddd080f2983f080c64a864d7117d279ee13f4e7e00",
-                    "createdAt": "2025-05-14T10:10:42Z",
-                    "operators.operatorframework.io/builder": "operator-sdk-v1.40.0",
-                    "operators.operatorframework.io/project_layout": "hybrid.helm.sdk.operatorframework.io/v1-alpha",
+                    "createdAt": "2025-07-23T09:21:58Z",
                     "repository": "https://github.com/trustification/trusted-profile-analyzer-operator",
                     "support": "Red Hat",
                     "features.operators.openshift.io/cnf": "false",
@@ -70,20 +68,21 @@
                     "features.operators.openshift.io/token-auth-aws": "false",
                     "features.operators.openshift.io/token-auth-azure": "false",
                     "features.operators.openshift.io/token-auth-gcp": "false",
+                    "operators.openshift.io/valid-subscription": "[\"Red Hat Trusted Profile Analyzer\"]",
                     "operators.operatorframework.io/builder": "operator-sdk-v1.40.0",
-                    "operators.operatorframework.io/project_layout": "hybrid.helm.sdk.operatorframework.io/v1-alpha"
+                    "operators.operatorframework.io/project_layout": "helm.sdk.operatorframework.io/v1"
                 },
                 "apiServiceDefinitions": {},
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "name": "trustedprofileanalyzers.charts.rhtpa.io",
+                            "name": "trustedprofileanalyzers.rhtpa.io",
                             "version": "v1",
                             "kind": "TrustedProfileAnalyzer"
                         }
                     ]
                 },
-                "description": "Red Hat Trusted Profile Analyzer is a proactive service that assists in risk management of Open Source Software (OSS) packages and dependencies. The Trusted Profile Analyzer service brings awareness to and remediation of OSS vulnerabilities discovered within the software supply chain.\n",
+                "description": "Red Hat Trusted Profile Analyzer (RHTPA) provides a single source of truth for your software inventory across all your environments. You can verify the integrity of your in-house and third-party applications against their respective Software Bill of Materials (SBOM) document.  Trusted Profile Analyzer provides vulnerability, component and license transparency, strengthens your software supply chain security, and enables an accurate, up-to-date understanding of your software inventory.\n\nFeatures and Benefits:\n\nEnhanced Software Supply Chain Security: Offers critical transparency and integrity verification across the entire software lifecycle.\n\nReduced Operational Risk: Proactively identifies and helps remediate vulnerabilities minimizing risk and compliance violations.\n\nImproved Compliance and Auditability: Simplifies the process of meeting regulatory requirements for software transparency and integrity by providing verifiable documentation and continuous monitoring.\n\nFaster Remediation and Incident Response: Provides targeted, actionable insights to prioritize and accelerate the patching and remediation of vulnerabilities.\n\nIncreased Developer Productivity & Trust: Integrates security into existing workflows without significant overhead, allowing developers to build and deploy with greater confidence in the integrity of their code and components.\n\nCentralized Visibility and Control: Consolidates disparate security information into a single pane of glass, offering a holistic view of your application security posture.\n\nRed Hat Trusted Profile Analyzer is a crucial tool for any organization running applications on OpenShift that needs to confidently understand, verify, and secure the software they deploy, especially in an era of complex software supply chains and increasing regulatory scrutiny.\n",
                 "displayName": "Red Hat Trusted Profile Analyzer",
                 "installModes": [
                     {
@@ -109,8 +108,8 @@
                 ],
                 "links": [
                     {
-                        "name": "RHTPA Operator",
-                        "url": "https://rhtpa-operator.domain"
+                        "name": "Trusted Profile Analyzer Operator",
+                        "url": "https://github.com/trustification/trusted-profile-analyzer-operator"
                     }
                 ],
                 "maintainers": [
@@ -120,7 +119,7 @@
                     }
                 ],
                 "maturity": "alpha",
-                "minKubeVersion": "1.31.0",
+                "minKubeVersion": "1.29.0",
                 "provider": {
                     "name": "Red Hat",
                     "url": "https://github.com/trustification/trusted-profile-analyzer-operator"
@@ -134,8 +133,12 @@
             "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:18d93fc5146044745ed3b1ff02cfaf03acc10d69a786345591cd31a68bb21e79"
         },
         {
-            "name": "",
+            "name": "manager",
             "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:fd1000bf264334c1944bd8ddd080f2983f080c64a864d7117d279ee13f4e7e00"
+        },
+        {
+            "name": "rhtpa-trustification-service-rhel9-ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825-annotation",
+            "image": "registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825"
         }
     ]
 }
