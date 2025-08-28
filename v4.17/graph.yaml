@@ -7,12 +7,12 @@ entries:
     name: rhtpa-operator.v1.0.0
     schema: olm.bundle
   - entries:
-      - name: rhtpa-operator.v1.0.0
+      - name: rhtpa-operator.v1.0.1
     name: stable-v1.0
     package: rhtpa-operator
     schema: olm.channel
   - entries:
-      - name: rhtpa-operator.v1.0.0
+      - name: rhtpa-operator.v1.0.1
     name: stable
     package: rhtpa-operator
     schema: olm.channel
