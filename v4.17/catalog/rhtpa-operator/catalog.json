@@ -13,7 +13,7 @@
     "package": "rhtpa-operator",
     "entries": [
         {
-            "name": "rhtpa-operator.v1.0.0"
+            "name": "rhtpa-operator.v1.0.1"
         }
     ]
 }
@@ -23,13 +23,13 @@
     "package": "rhtpa-operator",
     "entries": [
         {
-            "name": "rhtpa-operator.v1.0.0"
+            "name": "rhtpa-operator.v1.0.1"
         }
     ]
 }
 {
     "schema": "olm.bundle",
-    "name": "rhtpa-operator.v1.0.0",
+    "name": "rhtpa-operator.v1.0.1",
     "package": "rhtpa-operator",
     "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:2104f97a9d4ff7e3b4c1a6a0e00dd03d2b03dc290cf647f6e7eb98a3f01a08fa",
     "properties": [
@@ -45,7 +45,7 @@
             "type": "olm.package",
             "value": {
                 "packageName": "rhtpa-operator",
-                "version": "1.0.0"
+                "version": "1.0.1"
             }
         },
         {
@@ -69,7 +69,7 @@
                     "features.operators.openshift.io/token-auth-azure": "false",
                     "features.operators.openshift.io/token-auth-gcp": "false",
                     "operators.openshift.io/valid-subscription": "[\"Red Hat Trusted Profile Analyzer\"]",
-                    "operators.operatorframework.io/builder": "operator-sdk-v1.40.0",
+                    "operators.operatorframework.io/builder": "operator-sdk-v1.41.1",
                     "operators.operatorframework.io/project_layout": "helm.sdk.operatorframework.io/v1"
                 },
                 "apiServiceDefinitions": {},
@@ -82,7 +82,7 @@
                         }
                     ]
                 },
-                "description": "Red Hat Trusted Profile Analyzer (RHTPA) provides a single source of truth for your software inventory across all your environments. You can verify the integrity of your in-house and third-party applications against their respective Software Bill of Materials (SBOM) document.  Trusted Profile Analyzer provides vulnerability, component and license transparency, strengthens your software supply chain security, and enables an accurate, up-to-date understanding of your software inventory.\n\nFeatures and Benefits:\n\nEnhanced Software Supply Chain Security: Offers critical transparency and integrity verification across the entire software lifecycle.\n\nReduced Operational Risk: Proactively identifies and helps remediate vulnerabilities minimizing risk and compliance violations.\n\nImproved Compliance and Auditability: Simplifies the process of meeting regulatory requirements for software transparency and integrity by providing verifiable documentation and continuous monitoring.\n\nFaster Remediation and Incident Response: Provides targeted, actionable insights to prioritize and accelerate the patching and remediation of vulnerabilities.\n\nIncreased Developer Productivity & Trust: Integrates security into existing workflows without significant overhead, allowing developers to build and deploy with greater confidence in the integrity of their code and components.\n\nCentralized Visibility and Control: Consolidates disparate security information into a single pane of glass, offering a holistic view of your application security posture.\n\nRed Hat Trusted Profile Analyzer is a crucial tool for any organization running applications on OpenShift that needs to confidently understand, verify, and secure the software they deploy, especially in an era of complex software supply chains and increasing regulatory scrutiny.\n",
+                "description": "Red Hat Trusted Profile Analyzer (RHTPA) provides a single source of truth for your software inventory across all your environments. You can verify the integrity of your in-house and third-party applications against their respective Software Bill of Materials (SBOM) document.  Trusted Profile Analyzer provides vulnerability, component and license transparency, strengthens your software supply chain security, and enables an accurate, up-to-date understanding of your software inventory.\n\nFeatures and Benefits:\n\nEnhanced Software Supply Chain Security: Offers critical transparency and integrity verification across the entire software lifecycle.\n\nReduced Operational Risk: Proactively identifies and helps remediate vulnerabilities minimizing risk and compliance violations.\n\nImproved Compliance and Auditability: Simplifies the process of meeting regulatory requirements for software transparency and integrity by providing verifiable documentation and continuous monitoring.\n\nFaster Remediation and Incident Response: Provides targeted, actionable insights to prioritize and accelerate the patching and remediation of vulnerabilities.\n\nIncreased Developer Productivity & Trust: Integrates security into existing workflows without significant overhead, allowing developers to build and deploy with greater confidence in the integrity of their code and components.\n\nCentralized Visibility and Control: Consolidates disparate security information into a single pane of glass, offering a holistic view of your application security posture.\n\nRed Hat Trusted Profile Analyzer is a crucial tool for any organization running applications on OpenShift that needs to confidently understand, verify, and secure the software they deploy, especially in an era of complex software supply chains and increasing regulatory scrutiny.\n\n[Docs](https://docs.redhat.com/en/documentation/red_hat_trusted_profile_analyzer/2.1).\n",
                 "displayName": "Red Hat Trusted Profile Analyzer",
                 "installModes": [
                     {
