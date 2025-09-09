@@ -54,7 +54,7 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:4dac38ecceb986e654356ebd21eb34086b03d47b028318835d61432bd30298af",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:eec7dcdbb3f91df0d20f03b971b58a8fc0ad92e726f5db386060801ec5afe31e",
                     "createdAt": "2025-07-23T09:21:58Z",
                     "repository": "https://github.com/trustification/trusted-profile-analyzer-operator",
                     "support": "Red Hat",
@@ -134,7 +134,7 @@
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:4dac38ecceb986e654356ebd21eb34086b03d47b028318835d61432bd30298af"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:eec7dcdbb3f91df0d20f03b971b58a8fc0ad92e726f5db386060801ec5afe31e"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825-annotation",
