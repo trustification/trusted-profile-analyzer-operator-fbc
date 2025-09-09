@@ -110,7 +110,7 @@
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:faa351575051b1f50724c58903b2082612745f72ca561e841c7f53dfda08b755"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:8f3a4ee7ce9e71bdf602ff0088d8bc376ee24a0f19f2de74f01d3e7f796c3e8c"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825-annotation",
