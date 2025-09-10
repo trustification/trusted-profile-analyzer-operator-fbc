@@ -3,7 +3,7 @@ entries:
   - defaultChannel: stable
     name: rhtpa-operator
     schema: olm.package
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:c8f3d4e5ea35f687adff2d9853c45b9ae69717a9e47b47c9f8e7ee90747af1b2
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:1e4c133f47be455b913b865a3f232734fd763c6ab6a3fe342470b024edd7b9b0
     name: rhtpa-operator.v1.0.1
     schema: olm.bundle
   - entries:
