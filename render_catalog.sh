@@ -11,7 +11,7 @@ minor=${minor%%.*}
 related_images=$(jq -s '
 reduce .[] as $item ({};
     if ($item.schema == "olm.bundle" and
-        $item.name != "rhtpa-operator.v1.0.0" and
+        $item.name != "rhtpa-operator.v1.0.1" and
         (
         ($item.name | contains("v1.0.0")) or
         ($item.name | contains("v1.0.1")) or

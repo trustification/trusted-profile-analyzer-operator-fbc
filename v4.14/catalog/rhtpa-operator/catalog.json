@@ -13,7 +13,7 @@
     "package": "rhtpa-operator",
     "entries": [
         {
-            "name": "rhtpa-operator.v1.0.0"
+            "name": "rhtpa-operator.v1.0.1"
         }
     ]
 }
@@ -23,13 +23,13 @@
     "package": "rhtpa-operator",
     "entries": [
         {
-            "name": "rhtpa-operator.v1.0.0"
+            "name": "rhtpa-operator.v1.0.1"
         }
     ]
 }
 {
     "schema": "olm.bundle",
-    "name": "rhtpa-operator.v1.0.0",
+    "name": "rhtpa-operator.v1.0.1",
     "package": "rhtpa-operator",
     "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:1e4c133f47be455b913b865a3f232734fd763c6ab6a3fe342470b024edd7b9b0",
     "properties": [

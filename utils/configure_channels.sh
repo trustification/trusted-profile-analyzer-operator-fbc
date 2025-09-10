@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 OCP_VERSION="v4.18"
-export BUNDLE_NAME="rhtpa-operator.v1.0.0"
+export BUNDLE_NAME="rhtpa-operator.v1.0.1"
 export CHANNELS="stable,stable-v1.0"
 export GRAPH="./../${OCP_VERSION}/graph.yaml"
 

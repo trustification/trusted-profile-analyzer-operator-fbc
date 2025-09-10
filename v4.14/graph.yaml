@@ -4,15 +4,15 @@ entries:
     name: rhtpa-operator
     schema: olm.package
   - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:1e4c133f47be455b913b865a3f232734fd763c6ab6a3fe342470b024edd7b9b0
-    name: rhtpa-operator.v1.0.0
+    name: rhtpa-operator.v1.0.1
     schema: olm.bundle
   - entries:
-      - name: rhtpa-operator.v1.0.0
+      - name: rhtpa-operator.v1.0.1
     name: stable-v1.0
     package: rhtpa-operator
     schema: olm.channel
   - entries:
-      - name: rhtpa-operator.v1.0.0
+      - name: rhtpa-operator.v1.0.1
     name: stable
     package: rhtpa-operator
     schema: olm.channel
