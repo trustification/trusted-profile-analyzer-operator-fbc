@@ -14,7 +14,8 @@
     "entries": [
         {
             "name": "rhtpa-operator.v1.0.1",
-            "replaces": "rhtpa-operator.v1.0.0"
+            "replaces": "rhtpa-operator.v1.0.0",
+            "skips": ["rhtpa-operator.v1.0.0"]
         }
     ]
 }
@@ -25,7 +26,8 @@
     "entries": [
         {
             "name": "rhtpa-operator.v1.0.1",
-            "replaces": "rhtpa-operator.v1.0.0"
+            "replaces": "rhtpa-operator.v1.0.0",
+            "skips": ["rhtpa-operator.v1.0.0"]
         }
     ]
 }
