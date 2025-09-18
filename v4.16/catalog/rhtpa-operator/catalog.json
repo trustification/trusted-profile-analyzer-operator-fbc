@@ -102,7 +102,7 @@
         },
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:5df2fc0909f4976bbd0f38fcf03cda2dcca741c5c04a3bf8dc6e2daac2895739"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:9278d41683bd6e5d7682332ec7a76d94efbe8b55b2452b7b9525ec128e497f4d"
         }
     ]
 }
@@ -189,7 +189,7 @@
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:5df2fc0909f4976bbd0f38fcf03cda2dcca741c5c04a3bf8dc6e2daac2895739"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:9278d41683bd6e5d7682332ec7a76d94efbe8b55b2452b7b9525ec128e497f4d"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825-annotation",
