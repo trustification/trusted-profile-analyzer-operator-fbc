@@ -293,8 +293,8 @@
             "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:85d0427f1adbc49d0de49e919264960cc2761994caf053b3e7013b8acba99b04"
         },
         {
-            "name": "rhtpa-trustification-service-rhel9-ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825-annotation",
-            "image": "registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825"
+            "name": "rhtpa-trustification-service-rhel9-d5cf4a5bff94b59197f668a63d29591e3bc92ee89402edc70039e592d75cb84e-annotation",
+            "image": "registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:d5cf4a5bff94b59197f668a63d29591e3bc92ee89402edc70039e592d75cb84e"
         }
     ]
 }
