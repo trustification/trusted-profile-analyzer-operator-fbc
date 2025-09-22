@@ -51,7 +51,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.0",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac4552298a6476c56778cdcbc6a08b0e9a584a3eb067101b9759a97496dbb4e3",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:18d93fc5146044745ed3b1ff02cfaf03acc10d69a786345591cd31a68bb21e79",
     "properties": [
         {
             "type": "olm.gvk",
@@ -108,11 +108,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac4552298a6476c56778cdcbc6a08b0e9a584a3eb067101b9759a97496dbb4e3"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:18d93fc5146044745ed3b1ff02cfaf03acc10d69a786345591cd31a68bb21e79"
         },
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:85d0427f1adbc49d0de49e919264960cc2761994caf053b3e7013b8acba99b04"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:fd1000bf264334c1944bd8ddd080f2983f080c64a864d7117d279ee13f4e7e00"
         }
     ]
 }
@@ -120,7 +120,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.1",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac4552298a6476c56778cdcbc6a08b0e9a584a3eb067101b9759a97496dbb4e3",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:c8f3d4e5ea35f687adff2d9853c45b9ae69717a9e47b47c9f8e7ee90747af1b2",
     "properties": [
         {
             "type": "olm.gvk",
@@ -195,7 +195,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac4552298a6476c56778cdcbc6a08b0e9a584a3eb067101b9759a97496dbb4e3"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:c8f3d4e5ea35f687adff2d9853c45b9ae69717a9e47b47c9f8e7ee90747af1b2"
         },
         {
             "name": "manager",
