@@ -51,7 +51,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.0",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b9134ffd856e2b7d39f59e69dd5374a95636377937606dbc43510e4ad31b1c44",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:363c9475c5254ece43f102859f55646ce80d3354aaab65c6039cac0421be796b",
     "properties": [
         {
             "type": "olm.gvk",
@@ -108,7 +108,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b9134ffd856e2b7d39f59e69dd5374a95636377937606dbc43510e4ad31b1c44"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:363c9475c5254ece43f102859f55646ce80d3354aaab65c6039cac0421be796b"
         },
         {
             "name": "",
@@ -120,7 +120,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.1",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b9134ffd856e2b7d39f59e69dd5374a95636377937606dbc43510e4ad31b1c44",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:363c9475c5254ece43f102859f55646ce80d3354aaab65c6039cac0421be796b",
     "properties": [
         {
             "type": "olm.gvk",
@@ -195,7 +195,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b9134ffd856e2b7d39f59e69dd5374a95636377937606dbc43510e4ad31b1c44"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:363c9475c5254ece43f102859f55646ce80d3354aaab65c6039cac0421be796b"
         },
         {
             "name": "manager",
@@ -211,7 +211,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.2",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b9134ffd856e2b7d39f59e69dd5374a95636377937606dbc43510e4ad31b1c44",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:363c9475c5254ece43f102859f55646ce80d3354aaab65c6039cac0421be796b",
     "properties": [
         {
             "type": "olm.gvk",
@@ -286,7 +286,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b9134ffd856e2b7d39f59e69dd5374a95636377937606dbc43510e4ad31b1c44"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:363c9475c5254ece43f102859f55646ce80d3354aaab65c6039cac0421be796b"
         },
         {
             "name": "manager",
