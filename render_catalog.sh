@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 # change this ocp value accordingly to the ocp catalog you want
-OCP_VERSION="v4.16"
+OCP_VERSION="v4.20"
 CATALOG_FILE="./${OCP_VERSION}/catalog/rhtpa-operator/catalog.json"
 
 minor=${OCP_VERSION#v4.}
@@ -16,6 +16,7 @@ reduce .[] as $item ({};
         ($item.name | contains("v1.0.0")) or
         ($item.name | contains("v1.0.1")) or
         ($item.name | contains("v1.0.2")) or
+        ($item.name | contains("v1.0.3")) or
         ($item.name | contains("v1.1.0")) or
         ($item.name | contains("v1.1.1")) or
         ($item.name | contains("v1.1.2"))
