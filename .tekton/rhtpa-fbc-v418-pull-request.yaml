@@ -8,6 +8,7 @@ metadata:
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
+    build.appstudio.openshift.io/build-nudge-files: "v4.18/catalog.Dockerfile, v4.18/graph.yaml , v4.18/catalog/rhtpa-operator.json"
     pipelinesascode.tekton.dev/on-cel-expression: |
       event == "pull_request" && target_branch == "main" && ("v4.18/***".pathChanged() || ".tekton/rhtpa-fbc-v418-pull-request.yaml".pathChanged())
   creationTimestamp: null
