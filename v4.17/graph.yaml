@@ -18,12 +18,6 @@ entries:
           - rhtpa-operator.v1.0.0
           - rhtpa-operator.v1.0.1
           - rhtpa-operator.v1.0.2
-      - name: rhtpa-operator.v1.0.3
-        replaces: rhtpa-operator.v1.0.2
-        skips:
-          - rhtpa-operator.v1.0.0
-          - rhtpa-operator.v1.0.1
-          - rhtpa-operator.v1.0.2
     name: stable-v1.0
     package: rhtpa-operator
     schema: olm.channel
@@ -36,12 +30,6 @@ entries:
       - name: rhtpa-operator.v1.0.2
         replaces: rhtpa-operator.v1.0.1
         skips:
-          - rhtpa-operator.v1.0.1
-          - rhtpa-operator.v1.0.2
-      - name: rhtpa-operator.v1.0.3
-        replaces: rhtpa-operator.v1.0.2
-        skips:
-          - rhtpa-operator.v1.0.0
           - rhtpa-operator.v1.0.1
           - rhtpa-operator.v1.0.2
     name: stable
