@@ -31,7 +31,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.3",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:465ca7596de7c63f26aab74a2ad4afd72d0dabed3b4babc3e8fb4f7b81f01a47",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:a00e010868e6afafc5c357cecdb6d82a0043089cca7e34639a8ba55afc4292c1",
     "properties": [
         {
             "type": "olm.gvk",
@@ -56,7 +56,7 @@
                     "capabilities": "Basic Install",
                     "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:0af73ada8e6598fe62bbbe3571637fd41ed82bb7203ad2a1aa326b6d34853bf9",
                     "support": "Red Hat",
-                    "createdAt": "2025-09-24T15:04:16Z",
+                    "createdAt": "2025-10-02T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
@@ -131,7 +131,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:465ca7596de7c63f26aab74a2ad4afd72d0dabed3b4babc3e8fb4f7b81f01a47"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:a00e010868e6afafc5c357cecdb6d82a0043089cca7e34639a8ba55afc4292c1"
         },
         {
             "name": "manager",
