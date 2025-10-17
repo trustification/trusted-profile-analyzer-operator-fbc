@@ -415,7 +415,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.3",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:82aaf48ba505a34786eb45ada8959a0e1a6d60812f19ffc214d70c81a5b41d1e",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4b08287c2d4c5d55e848427eeea1fe133a19294a6d7469248b643d81e058c3b8",
     "properties": [
         {
             "type": "olm.gvk",
@@ -438,10 +438,10 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:d5cf4a5bff94b59197f668a63d29591e3bc92ee89402edc70039e592d75cb84e\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:070cb1542034154807feeaf8e851e49df2dadf6513badc535a220f29f92b5a65",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:edf65fa39f595f6f081e72d17a4ba26f186169ab0edb7f0bf0c4feb27a102892",
                     "repository": "https://github.com/trustification/trusted-profile-analyzer-operator",
                     "support": "Red Hat",
-                    "createdAt": "2025-10-02T15:04:16Z",
+                    "createdAt": "2025-10-17T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
@@ -468,7 +468,7 @@
                         }
                     ]
                 },
-                "description": "Red Hat Trusted Profile Analyzer (RHTPA) provides a single source of truth for your software inventory across all your environments. You can verify the integrity of your in-house and third-party applications against their respective Software Bill of Materials (SBOM) document.  Trusted Profile Analyzer provides vulnerability, component and license transparency, strengthens your software supply chain security, and enables an accurate, up-to-date understanding of your software inventory.\n\nFeatures and Benefits:\n\nEnhanced Software Supply Chain Security: Offers critical transparency and integrity verification across the entire software lifecycle.\n\nReduced Operational Risk: Proactively identifies and helps remediate vulnerabilities minimizing risk and compliance violations.\n\nImproved Compliance and Auditability: Simplifies the process of meeting regulatory requirements for software transparency and integrity by providing verifiable documentation and continuous monitoring.\n\nFaster Remediation and Incident Response: Provides targeted, actionable insights to prioritize and accelerate the patching and remediation of vulnerabilities.\n\nIncreased Developer Productivity & Trust: Integrates security into existing workflows without significant overhead, allowing developers to build and deploy with greater confidence in the integrity of their code and components.\n\nCentralized Visibility and Control: Consolidates disparate security information into a single pane of glass, offering a holistic view of your application security posture.\n\nRed Hat Trusted Profile Analyzer is a crucial tool for any organization running applications on OpenShift that needs to confidently understand, verify, and secure the software they deploy, especially in an era of complex software supply chains and increasing regulatory scrutiny.\n\n[Documentation](https://docs.redhat.com/en/documentation/red_hat_trusted_profile_analyzer/2.1).\n",
+                "description": "Red Hat Trusted Profile Analyzer (RHTPA) provides a single source of truth for your software inventory across all your environments. You can verify the integrity of your in-house and third-party applications against their respective Software Bill of Materials (SBOM) document.  Trusted Profile Analyzer provides vulnerability, component and license transparency, strengthens your software supply chain security, and enables an accurate, up-to-date understanding of your software inventory.\n\nFeatures and Benefits:\n\nEnhanced Software Supply Chain Security: Offers critical transparency and integrity verification across the entire software lifecycle.\n\nReduced Operational Risk: Proactively identifies and helps remediate vulnerabilities minimizing risk and compliance violations.\n\nImproved Compliance and Auditability: Simplifies the process of meeting regulatory requirements for software transparency and integrity by providing verifiable documentation and continuous monitoring.\n\nFaster Remediation and Incident Response: Provides targeted, actionable insights to prioritize and accelerate the patching and remediation of vulnerabilities.\n\nIncreased Developer Productivity & Trust: Integrates security into existing workflows without significant overhead, allowing developers to build and deploy with greater confidence in the integrity of their code and components.\n\nCentralized Visibility and Control: Consolidates disparate security information into a single pane of glass, offering a holistic view of your application security posture.\n\nRed Hat Trusted Profile Analyzer is a crucial tool for any organization running applications on OpenShift that needs to confidently understand, verify, and secure the software they deploy, especially in an era of complex software supply chains and increasing regulatory scrutiny.\n\n[Documentation](https://docs.redhat.com/en/documentation/red_hat_trusted_profile_analyzer/2.2).\n",
                 "displayName": "Red Hat Trusted Profile Analyzer",
                 "installModes": [
                     {
@@ -516,11 +516,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:82aaf48ba505a34786eb45ada8959a0e1a6d60812f19ffc214d70c81a5b41d1e"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4b08287c2d4c5d55e848427eeea1fe133a19294a6d7469248b643d81e058c3b8"
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:070cb1542034154807feeaf8e851e49df2dadf6513badc535a220f29f92b5a65"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:edf65fa39f595f6f081e72d17a4ba26f186169ab0edb7f0bf0c4feb27a102892"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-4365bd4de518b86d08be84d10e6bc923e4759d8fae9b34746604f08acf74b32e-annotation",
