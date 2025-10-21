@@ -130,7 +130,7 @@
         },
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:fd1000bf264334c1944bd8ddd080f2983f080c64a864d7117d279ee13f4e7e00"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:341411a5a9e95618db4db5e5ef34d45e7a2f5dbcb9e1fc536beb700086cd25d2"
         }
     ]
 }
@@ -217,7 +217,7 @@
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:8f3a4ee7ce9e71bdf602ff0088d8bc376ee24a0f19f2de74f01d3e7f796c3e8c"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:341411a5a9e95618db4db5e5ef34d45e7a2f5dbcb9e1fc536beb700086cd25d2"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-ed67a8b0d4fc3fd5ce4dffcebc534290e97df6a99c55c4830bb150fc4d0f4825-annotation",
@@ -308,7 +308,7 @@
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:618810ffac4f2d4962693dc3537318e973fd507a98deb1260a7dd8f0153aff38"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:341411a5a9e95618db4db5e5ef34d45e7a2f5dbcb9e1fc536beb700086cd25d2"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-d5cf4a5bff94b59197f668a63d29591e3bc92ee89402edc70039e592d75cb84e-annotation",
@@ -399,7 +399,7 @@
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:4b3d354d3185f31cb2455bfb3f99b65fdec960d1bb838744b0bf3b5f713c5c1c"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:341411a5a9e95618db4db5e5ef34d45e7a2f5dbcb9e1fc536beb700086cd25d2"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-b716530c3b6ee8a79814fc75f55b65d5bcfaa61ac50c9947348751904b8351c7-annotation",
