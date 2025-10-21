@@ -36,7 +36,7 @@ spec:
   - name: path-context
     value: v4.17
   - name: ADDITIONAL_TAGS
-    value: v1.0.3-rc
+    value: ["v1.0.3-rc", "pull-request-{{pull_request_number}}", "from-branch-{{source_branch}}", "{{target_branch}}-$(tasks.clone-repository.results.commit-timestamp)"]
   pipelineSpec:
     description: |
       This pipeline is ideal for building and verifying [file-based catalogs](https://konflux-ci.dev/docs/end-to-end/building-olm/#building-the-file-based-catalog).
