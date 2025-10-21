@@ -35,6 +35,8 @@ spec:
     value: catalog.Dockerfile
   - name: path-context
     value: v4.17
+  - name: additional-tags
+    value: ["v1.0.3-rc", "pull-request-{{pull_request_number}}", "from-branch-{{source_branch}}"]
   pipelineSpec:
     description: |
       This pipeline is ideal for building and verifying [file-based catalogs](https://konflux-ci.dev/docs/end-to-end/building-olm/#building-the-file-based-catalog).
@@ -313,6 +315,8 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: ADDITIONAL_TAGS
+        value: $(additional-tags)
       runAfter:
       - build-image-index
       taskRef:
