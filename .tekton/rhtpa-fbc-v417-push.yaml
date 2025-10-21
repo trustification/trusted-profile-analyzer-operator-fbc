@@ -18,6 +18,10 @@ metadata:
   namespace: trusted-content-tenant
 spec:
   params:
+  - name: version
+    value: "v1.0.3"
+  - name: version-postfix-qe
+    value: "-rc"
   - name: git-url
     value: '{{source_url}}'
   - name: revision
@@ -31,8 +35,6 @@ spec:
     value: catalog.Dockerfile
   - name: path-context
     value: v4.17
-  - name: additional-tags
-    value: ["v1.0.3-rc", "pull-request-{{pull_request_number}}", "from-branch-{{source_branch}}"]
   pipelineSpec:
     description: |
       This pipeline is ideal for building and verifying [file-based catalogs](https://konflux-ci.dev/docs/end-to-end/building-olm/#building-the-file-based-catalog).
@@ -312,7 +314,7 @@ spec:
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
       - name: ADDITIONAL_TAGS
-        value: $(additional-tags)
+        value: ["{{version}}{{version-postfix-qe}}","{{revision}}"]
       runAfter:
       - build-image-index
       taskRef:
