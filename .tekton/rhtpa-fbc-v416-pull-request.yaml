@@ -256,23 +256,6 @@ spec:
         operator: in
         values:
         - "true"
-    - name: apply-tags
-      params:
-        - name: IMAGE
-          value: $(tasks.build-container.results.IMAGE_URL)
-        - name: ADDITIONAL_TAGS
-          value: $(ADDITIONAL_TAGS)
-      runAfter:
-        - build-images
-      taskRef:
-        params:
-          - name: name
-            value: apply-tags
-          - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-apply-tags:0.2
-          - name: kind
-            value: task
-        resolver: bundles
     - name: build-image-index
       params:
       - name: IMAGE
@@ -332,6 +315,8 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: ADDITIONAL_TAGS
+        value: $(ADDITIONAL_TAGS)
       runAfter:
       - build-image-index
       taskRef:
