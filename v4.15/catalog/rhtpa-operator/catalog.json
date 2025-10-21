@@ -38,7 +38,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.0",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac9e34d9dd284de7b033abb11a5931b0168c645cebf43ac460523e792149cd85",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ece7975068502e1c88ede5b0d7345d02259a842fb6b2339ded2f7d513ce8d8d1",
     "properties": [
         {
             "type": "olm.gvk",
@@ -138,7 +138,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac9e34d9dd284de7b033abb11a5931b0168c645cebf43ac460523e792149cd85"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ece7975068502e1c88ede5b0d7345d02259a842fb6b2339ded2f7d513ce8d8d1"
         },
         {
             "name": "",
@@ -150,7 +150,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.1",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac9e34d9dd284de7b033abb11a5931b0168c645cebf43ac460523e792149cd85",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ece7975068502e1c88ede5b0d7345d02259a842fb6b2339ded2f7d513ce8d8d1",
     "properties": [
         {
             "type": "olm.gvk",
@@ -207,7 +207,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ac9e34d9dd284de7b033abb11a5931b0168c645cebf43ac460523e792149cd85"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:ece7975068502e1c88ede5b0d7345d02259a842fb6b2339ded2f7d513ce8d8d1"
         },
         {
             "name": "",
