@@ -40,6 +40,13 @@ entries:
           - rhtpa-operator.v1.0.0
           - rhtpa-operator.v1.0.1
           - rhtpa-operator.v1.0.2
+      - name: rhtpa-operator.v1.0.4
+        replaces: rhtpa-operator.v1.0.3
+        skips:
+          - rhtpa-operator.v1.0.0
+          - rhtpa-operator.v1.0.1
+          - rhtpa-operator.v1.0.2
+          - rhtpa-operator.v1.0.3
     name: stable
     package: rhtpa-operator
     schema: olm.channel
@@ -54,6 +61,8 @@ entries:
     schema: olm.bundle
   - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:96f2cd94ebba9031ec9e5c18a54419309c916e9f43bc9e7be46e50c3ff2bd3ef
     name: rhtpa-operator.v1.0.3
+  - image: quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:d8a54ef8117633f2161aa216202c0360af6895b444b82dd6ce3d90349a9294a
+    name: rhtpa-operator.v1.0.4
     schema: olm.bundle
   - entries:
       - message: rhtpa-operator.v1.0.0 is deprecated. Uninstall and install rhtpa-operator.v1.0.3 for support.
@@ -67,6 +76,10 @@ entries:
       - message: rhtpa-operator.v1.0.2 is deprecated. Uninstall and install rhtpa-operator.v1.0.3 for support.
         reference:
           name: rhtpa-operator.v1.0.2
+          schema: olm.bundle
+      - message: rhtpa-operator.v1.0.3 is deprecated. Uninstall and install rhtpa-operator.v1.0.4 for support.
+        reference:
+          name: rhtpa-operator.v1.0.3
           schema: olm.bundle
     package: rhtpa-operator
     schema: olm.deprecations
