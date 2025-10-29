@@ -552,7 +552,7 @@
             "type": "olm.package",
             "value": {
                 "packageName": "rhtpa-operator",
-                "version": "1.0.3"
+                "version": "1.0.4"
             }
         },
         {
