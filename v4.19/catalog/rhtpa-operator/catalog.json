@@ -413,7 +413,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.0.3",
     "package": "rhtpa-operator",
-    "image": "quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:d8a54ef8117633f2161aa216202c0360af6895b444b82dd6ce3d90349a9294a6",
+    "image": "quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:b06f8fa3a14188409a576867ad5170ab6888aa56979467e38901e46525a86744",
     "properties": [
         {
             "type": "olm.gvk",
@@ -436,7 +436,7 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:d5cf4a5bff94b59197f668a63d29591e3bc92ee89402edc70039e592d75cb84e\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "quay.io/mdessi/rhtpa-rhel9-operator@sha256:79e2dea2ce303f1096399c7b2c87bfdbf3c5a0a7eef40689f774e84e676056fc",
+                    "containerImage": "quay.io/mdessi/rhtpa-rhel9-operator@sha256:9b80c336a4cf4db4294b90750b2388a3525cddf809eefce45b721e620a9b8215",
                     "support": "Red Hat",
                     "createdAt": "2025-10-23T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
@@ -513,11 +513,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:d8a54ef8117633f2161aa216202c0360af6895b444b82dd6ce3d90349a9294a6"
+            "image": "quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:b06f8fa3a14188409a576867ad5170ab6888aa56979467e38901e46525a86744"
         },
         {
             "name": "manager",
-            "image": "quay.io/mdessi/rhtpa-rhel9-operator@sha256:79e2dea2ce303f1096399c7b2c87bfdbf3c5a0a7eef40689f774e84e676056fc"
+            "image": "quay.io/mdessi/rhtpa-rhel9-operator@sha256:9b80c336a4cf4db4294b90750b2388a3525cddf809eefce45b721e620a9b8215"
         },
         {
             "name": "rhtpa-trustification-service-rhel9-b716530c3b6ee8a79814fc75f55b65d5bcfaa61ac50c9947348751904b8351c7-annotation",
