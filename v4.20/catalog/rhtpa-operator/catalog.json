@@ -13,23 +13,13 @@
     "package": "rhtpa-operator",
     "entries": [
         {
-            "name": "rhtpa-operator.v1.0.3"
-        }
-    ]
-}
-{
-    "schema": "olm.channel",
-    "name": "stable-v1.0",
-    "package": "rhtpa-operator",
-    "entries": [
-        {
-            "name": "rhtpa-operator.v1.0.3"
+            "name": "rhtpa-operator.v1.1.0"
         }
     ]
 }
 {
     "schema": "olm.bundle",
-    "name": "rhtpa-operator.v1.0.3",
+    "name": "rhtpa-operator.v1.1.0",
     "package": "rhtpa-operator",
     "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:96f2cd94ebba9031ec9e5c18a54419309c916e9f43bc9e7be46e50c3ff2bd3ef",
     "properties": [
@@ -45,7 +35,7 @@
             "type": "olm.package",
             "value": {
                 "packageName": "rhtpa-operator",
-                "version": "1.0.3"
+                "version": "1.1.0"
             }
         },
         {
@@ -56,7 +46,7 @@
                     "capabilities": "Basic Install",
                     "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:2e1fcb0b5b10a58c20904f25661541116c3f12ed7c4bb3c983d8b220699363f6",
                     "support": "Red Hat",
-                    "createdAt": "2025-10-23T15:04:16Z",
+                    "createdAt": "2025-10-30T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
