@@ -71,7 +71,7 @@
     "package": "rhtpa-operator",
     "entries": [
         {
-            "name": "rhtpa-operator.v1.0.0"
+            "name": "rhtpa-operator.v1.1.0"
         }
     ]
 }
