@@ -16,7 +16,6 @@ reduce .[] as $item ({};
         ($item.name | contains("v1.0.0")) or
         ($item.name | contains("v1.0.1")) or
         ($item.name | contains("v1.0.2")) or
-        ($item.name | contains("v1.0.3")) or
         ($item.name | contains("v1.1.0")) or
         ($item.name | contains("v1.1.1")) or
         ($item.name | contains("v1.1.2"))

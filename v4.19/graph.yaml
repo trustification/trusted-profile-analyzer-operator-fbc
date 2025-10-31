@@ -14,7 +14,7 @@ entries:
         skips:
           - rhtpa-operator.v1.0.0
           - rhtpa-operator.v1.0.1
-      - name: rhtpa-operator.v1.0.3
+      - name: rhtpa-operator.v1.1.0
         replaces: rhtpa-operator.v1.0.2
         skips:
           - rhtpa-operator.v1.0.0
@@ -34,7 +34,7 @@ entries:
         skips:
           - rhtpa-operator.v1.0.0
           - rhtpa-operator.v1.0.1
-      - name: rhtpa-operator.v1.0.3
+      - name: rhtpa-operator.v1.1.0
         replaces: rhtpa-operator.v1.0.2
         skips:
           - rhtpa-operator.v1.0.0
@@ -52,19 +52,19 @@ entries:
   - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:dc12800b318b9d358809e389e75d4d12a9f02015bfa0961ab17654ba8b0f5ff3
     name: rhtpa-operator.v1.0.2
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b1148eac0caa565a8402bf6df10ed291869172195954088e5869933f96f6e4e9
-    name: rhtpa-operator.v1.0.3
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4f718a2d04790162a32d0892b593cd2a39bf776f77dd40e86a2c6969b18ae5a9
+    name: rhtpa-operator.v1.1.0
     schema: olm.bundle
   - entries:
-      - message: rhtpa-operator.v1.0.0 is deprecated. Uninstall and install rhtpa-operator.v1.0.3 for support.
+      - message: rhtpa-operator.v1.0.0 is deprecated. Uninstall and install rhtpa-operator.v1.1.0 for support.
         reference:
           name: rhtpa-operator.v1.0.0
           schema: olm.bundle
-      - message: rhtpa-operator.v1.0.1 is deprecated. Uninstall and install rhtpa-operator.v1.0.3 for support.
+      - message: rhtpa-operator.v1.0.1 is deprecated. Uninstall and install rhtpa-operator.v1.1.0 for support.
         reference:
           name: rhtpa-operator.v1.0.1
           schema: olm.bundle
-      - message: rhtpa-operator.v1.0.2 is deprecated. Uninstall and install rhtpa-operator.v1.0.3 for support.
+      - message: rhtpa-operator.v1.0.2 is deprecated. Uninstall and install rhtpa-operator.v1.1.0 for support.
         reference:
           name: rhtpa-operator.v1.0.2
           schema: olm.bundle

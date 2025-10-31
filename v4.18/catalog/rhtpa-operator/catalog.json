@@ -27,7 +27,7 @@
             ]
         },
         {
-            "name": "rhtpa-operator.v1.0.3",
+            "name": "rhtpa-operator.v1.1.0",
             "replaces": "rhtpa-operator.v1.0.2",
             "skips": [
                 "rhtpa-operator.v1.0.0",
@@ -56,12 +56,22 @@
             ]
         },
         {
-            "name": "rhtpa-operator.v1.0.3",
+            "name": "rhtpa-operator.v1.1.0",
             "replaces": "rhtpa-operator.v1.0.2",
             "skips": [
                 "rhtpa-operator.v1.0.0",
                 "rhtpa-operator.v1.0.1"
             ]
+        }
+    ]
+}
+{
+    "schema": "olm.channel",
+    "name": "stable-v1.1",
+    "package": "rhtpa-operator",
+    "entries": [
+        {
+            "name": "rhtpa-operator.v1.1.0"
         }
     ]
 }
@@ -413,9 +423,9 @@
 }
 {
     "schema": "olm.bundle",
-    "name": "rhtpa-operator.v1.0.3",
+    "name": "rhtpa-operator.v1.1.0",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b1148eac0caa565a8402bf6df10ed291869172195954088e5869933f96f6e4e9",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4f718a2d04790162a32d0892b593cd2a39bf776f77dd40e86a2c6969b18ae5a9",
     "properties": [
         {
             "type": "olm.gvk",
@@ -429,7 +439,7 @@
             "type": "olm.package",
             "value": {
                 "packageName": "rhtpa-operator",
-                "version": "1.0.3"
+                "version": "1.1.0"
             }
         },
         {
@@ -438,10 +448,10 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {\n        \"fullName\": \"registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:d5cf4a5bff94b59197f668a63d29591e3bc92ee89402edc70039e592d75cb84e\",\n        \"pullPolicy\": \"IfNotPresent\"\n      },\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:d50382baaf924564b342778f38af18d4e7a16d13c55fc29be1dadfc8db9904eb",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:61ab4185ab8c6bbbecb8ee03fd5e19b0f2cdacbf745069b2be808f8a97346b48",
                     "repository": "https://github.com/trustification/trusted-profile-analyzer-operator",
                     "support": "Red Hat",
-                    "createdAt": "2025-10-23T15:04:16Z",
+                    "createdAt": "2025-10-30T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
@@ -516,15 +526,15 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:b1148eac0caa565a8402bf6df10ed291869172195954088e5869933f96f6e4e9"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4f718a2d04790162a32d0892b593cd2a39bf776f77dd40e86a2c6969b18ae5a9"
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:d50382baaf924564b342778f38af18d4e7a16d13c55fc29be1dadfc8db9904eb"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:61ab4185ab8c6bbbecb8ee03fd5e19b0f2cdacbf745069b2be808f8a97346b48"
         },
         {
-            "name": "rhtpa-trustification-service-rhel9-b716530c3b6ee8a79814fc75f55b65d5bcfaa61ac50c9947348751904b8351c7-annotation",
-            "image": "registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:b716530c3b6ee8a79814fc75f55b65d5bcfaa61ac50c9947348751904b8351c7"
+            "name": "rhtpa-trustification-service-rhel9-1e7b633db296319a1c62b1ff026e12e2f830382f1201f55240996c5fc473b3aa-annotation",
+            "image": "registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:1e7b633db296319a1c62b1ff026e12e2f830382f1201f55240996c5fc473b3aa"
         }
     ]
 }
