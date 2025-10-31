@@ -531,7 +531,7 @@
         },
         {
             "name": "rhtpa-trustification-service-rhel9-1e7b633db296319a1c62b1ff026e12e2f830382f1201f55240996c5fc473b3aa-annotation",
-            "image": "registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256-1e7b633db296319a1c62b1ff026e12e2f830382f1201f55240996c5fc473b3aa"
+            "image": "registry.redhat.io/rhtpa/rhtpa-trustification-service-rhel9@sha256:1e7b633db296319a1c62b1ff026e12e2f830382f1201f55240996c5fc473b3aa"
         }
     ]
 }
