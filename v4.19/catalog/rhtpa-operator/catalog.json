@@ -33,6 +33,15 @@
                 "rhtpa-operator.v1.0.0",
                 "rhtpa-operator.v1.0.1"
             ]
+        },
+        {
+            "name": "rhtpa-operator.v1.2.0",
+            "replaces": "rhtpa-operator.v1.1.0",
+            "skips": [
+                "rhtpa-operator.v1.0.0",
+                "rhtpa-operator.v1.0.1",
+                "rhtpa-operator.v1.0.2"
+            ]
         }
     ]
 }
