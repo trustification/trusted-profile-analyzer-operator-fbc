@@ -52,7 +52,7 @@ entries:
   - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:dc12800b318b9d358809e389e75d4d12a9f02015bfa0961ab17654ba8b0f5ff3
     name: rhtpa-operator.v1.0.2
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4f718a2d04790162a32d0892b593cd2a39bf776f77dd40e86a2c6969b18ae5a9
+  - image: quay.io/mdessi/rhtpa-rhel9-operator-bundle@sha256:3267ec10ab9ff50d595d8e9e8c6537d7848c898c5498776c89acfee627dae791
     name: rhtpa-operator.v1.1.0
     schema: olm.bundle
   - entries:
