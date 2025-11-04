@@ -43,16 +43,16 @@ entries:
     name: stable
     package: rhtpa-operator
     schema: olm.channel
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:18d93fc5146044745ed3b1ff02cfaf03acc10d69a786345591cd31a68bb21e79
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4d03e78ebcd76cf3ec099ad838445a65614f19df52ef5d5a77dfa066c724d75e
     name: rhtpa-operator.v1.0.0
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:c8f3d4e5ea35f687adff2d9853c45b9ae69717a9e47b47c9f8e7ee90747af1b2
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4d03e78ebcd76cf3ec099ad838445a65614f19df52ef5d5a77dfa066c724d75e
     name: rhtpa-operator.v1.0.1
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:dc12800b318b9d358809e389e75d4d12a9f02015bfa0961ab17654ba8b0f5ff3
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4d03e78ebcd76cf3ec099ad838445a65614f19df52ef5d5a77dfa066c724d75e
     name: rhtpa-operator.v1.0.2
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4f718a2d04790162a32d0892b593cd2a39bf776f77dd40e86a2c6969b18ae5a9
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:4d03e78ebcd76cf3ec099ad838445a65614f19df52ef5d5a77dfa066c724d75e
     name: rhtpa-operator.v1.1.0
     schema: olm.bundle
   - entries:
