@@ -535,3 +535,44 @@
         }
     ]
 }
+{
+    "schema": "olm.deprecations",
+    "package": "rhtpa-operator",
+    "entries": [
+        {
+            "reference": {
+                "schema": "olm.channel",
+                "name": "stable"
+            },
+            "message": "stable is no longer supported. Please switch to a not deprecated channel for continued support."
+        },
+        {
+            "reference": {
+                "schema": "olm.bundle",
+                "name": "rhtpa-operator.v1.0.0"
+            },
+            "message": "rhtpa-operator.v1.0.0 is deprecated. Please consider updating for continued support."
+        },
+        {
+            "reference": {
+                "schema": "olm.bundle",
+                "name": "rhtpa-operator.v1.0.1"
+            },
+            "message": "rhtpa-operator.v1.0.1 is deprecated. Please consider updating for continued support."
+        },
+        {
+            "reference": {
+                "schema": "olm.bundle",
+                "name": "rhtpa-operator.v1.0.2"
+            },
+            "message": "rhtpa-operator.v1.0.2 is deprecated. Please consider updating for continued support."
+        },
+        {
+            "reference": {
+                "schema": "olm.channel",
+                "name": "stable-v1.0"
+            },
+            "message": "stable-v1.0 is no longer supported. Please switch to a not deprecated channel for continued support."
+        }
+    ]
+}
