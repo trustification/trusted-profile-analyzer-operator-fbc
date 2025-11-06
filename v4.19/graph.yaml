@@ -67,3 +67,15 @@ entries:
     reference:
       name: stable.v1.0
       schema: olm.channel
+  - message: rhtpa-operator.v1.0.0 is deprecated. Please consider updating for continued support.
+    reference:
+      name: rhtas-operator.v1.0.0
+      schema: olm.bundle
+  - message: rhtpa-operator.v1.0.1 is deprecated. Please consider updating for continued support.
+    reference:
+      name: rhtas-operator.v1.0.1
+      schema: olm.bundle
+  - message: rhtpa-operator.v1.0.2 is deprecated. Please consider updating for continued support.
+    reference:
+      name: rhtas-operator.v1.0.2
+      schema: olm.bundle
