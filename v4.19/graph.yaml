@@ -34,6 +34,7 @@ name: stable-v1.1
 package: rhtpa-operator
 entries:
   - name: rhtpa-operator.v1.1.0
+    replaces: rhtpa-operator.v1.0.2
 ---
 schema: olm.template.basic
 entries:
