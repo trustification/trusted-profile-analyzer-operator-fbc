@@ -59,11 +59,11 @@ entries:
 schema: olm.deprecations
 package: rhtpa-operator
 entries:
-  - message: Channel stable is deprecated. Please consider updating for continued support.
+  - message: Channel stable is deprecated. Please consider updating channel for continued support.
     reference:
       name: stable
       schema: olm.channel
-  - message: Channel stable.v1.0 is deprecated. Please consider updating for continued support.
+  - message: Channel stable.v1.0 is deprecated. Please consider updating channel  for continued support.
     reference:
       name: stable.v1.0
       schema: olm.channel
