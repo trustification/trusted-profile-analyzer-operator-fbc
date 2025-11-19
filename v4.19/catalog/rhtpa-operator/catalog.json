@@ -400,7 +400,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.1.0",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:0448824bfc347b5bb4527e4060ed910cab2355dc49e1dd89851692d338a14aeb",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:296c7c5ce1236c732583922dcf61dc2dfc5b872cc633203ae8d983b7105535f1",
     "properties": [
         {
             "type": "olm.gvk",
@@ -423,7 +423,7 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {},\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:e862a881b84d6d41a0b6505dc7bcd3e3c2e35f5e910478b4934869e8390a6ba6",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:82c7c370c029a8fc6a0a918c16ea14e25aab8aa8b87ca586b31f3aa5e8633b39",
                     "support": "Red Hat",
                     "createdAt": "2025-11-13T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
@@ -500,11 +500,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:0448824bfc347b5bb4527e4060ed910cab2355dc49e1dd89851692d338a14aeb"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:296c7c5ce1236c732583922dcf61dc2dfc5b872cc633203ae8d983b7105535f1"
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:e862a881b84d6d41a0b6505dc7bcd3e3c2e35f5e910478b4934869e8390a6ba6"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:82c7c370c029a8fc6a0a918c16ea14e25aab8aa8b87ca586b31f3aa5e8633b39"
         }
     ]
 }
