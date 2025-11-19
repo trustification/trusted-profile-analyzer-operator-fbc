@@ -386,7 +386,7 @@
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:ac76e98340dace3b70b27cd59891950d3a0a3678c30d8608267da9514daa572e"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:82c7c370c029a8fc6a0a918c16ea14e25aab8aa8b87ca586b31f3aa5e8633b39"
         }
     ]
 }
