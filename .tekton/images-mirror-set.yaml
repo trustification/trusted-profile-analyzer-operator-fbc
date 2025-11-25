@@ -6,8 +6,8 @@ metadata:
 spec:
   imageDigestMirrors:
     - mirrors:
-        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-1-0-z
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-1-1-z
       source: registry.redhat.io/rhtpa/rhtpa-rhel9-operator
     - mirrors:
-        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-1-0-z
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-1-1-z
       source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
