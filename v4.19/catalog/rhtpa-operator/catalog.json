@@ -541,7 +541,7 @@
                     "capabilities": "Basic Install",
                     "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:9eb81afc348a02ee2d91361c116b4b12d29a2f2f1bfa16cc260af8188a8ed976",
                     "support": "Red Hat",
-                    "createdAt": "2025-12-03T15:04:16Z",
+                    "createdAt": "2025-12-05T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
