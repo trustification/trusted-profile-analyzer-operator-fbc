@@ -748,7 +748,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.1.3",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:31583b865d8d32cd075a76bfe81c13378e285986560ee99edf7185a666a8ecaf",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:2aaee2d83627088d603dadb0436b2cd411fed55ce03d4fecd1bf9b45fade287a",
     "properties": [
         {
             "type": "olm.gvk",
@@ -771,9 +771,9 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {},\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:ec42322bc8d33c57d3b11ea8e7734b6d94eb8581eb66a7f451f7eae5a2aa39b8",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:cb5b933220b1493a9fd73380d296b3d6f79c594fc28446e0197c9a3b143025ef",
                     "support": "Red Hat",
-                    "createdAt": "2026-03-12T15:04:16Z",
+                    "createdAt": "2026-03-23T15:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
@@ -848,11 +848,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:31583b865d8d32cd075a76bfe81c13378e285986560ee99edf7185a666a8ecaf"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:2aaee2d83627088d603dadb0436b2cd411fed55ce03d4fecd1bf9b45fade287a"
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:ec42322bc8d33c57d3b11ea8e7734b6d94eb8581eb66a7f451f7eae5a2aa39b8"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:cb5b933220b1493a9fd73380d296b3d6f79c594fc28446e0197c9a3b143025ef"
         }
     ]
 }
