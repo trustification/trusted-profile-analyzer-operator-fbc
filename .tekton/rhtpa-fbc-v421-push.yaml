@@ -21,7 +21,7 @@ metadata:
 spec:
   params:
   - name: version
-    value: "v1.1.4"
+    value: "v1.1.5"
   - name: version-postfix-qe
     value: "-rc"
   - name: git-url
