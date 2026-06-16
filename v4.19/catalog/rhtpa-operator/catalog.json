@@ -1006,7 +1006,7 @@
                     "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:d8fb6687b53129034653e4e67d28af2ef26a596eaa23f0d1e9b7f0ddb39c2966",
                     "repository": "https://github.com/trustification/trusted-profile-analyzer-operator",
                     "support": "Red Hat",
-                    "createdAt": "2026-6-13T16:04:16Z",
+                    "createdAt": "2026-6-16T16:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
