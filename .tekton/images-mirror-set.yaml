@@ -11,3 +11,9 @@ spec:
     - mirrors:
         - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-1-1-z
       source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
+    - mirrors:
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-3-y-z
+      source: registry.redhat.io/rhtpa/rhtpa-rhel10-operator
+    - mirrors:
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-3-y-z
+      source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
