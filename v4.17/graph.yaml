@@ -48,6 +48,12 @@ entries:
   - name: rhtpa-operator.v1.1.6
     replaces: rhtpa-operator.v1.1.5
 ---
+schema: olm.channel
+name: stable-v3
+package: rhtpa-operator
+entries:
+  - name: rhtpa-operator.v3.0.0
+---
 schema: olm.template.basic
 entries:
   - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:18d93fc5146044745ed3b1ff02cfaf03acc10d69a786345591cd31a68bb21e79
@@ -74,6 +80,9 @@ entries:
     schema: olm.bundle
   - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:25a6a050e84b6e3f9c378635dd24cd83d5dd1c3728d2f0b6420b4a947194305c
     name: rhtpa-operator.v1.1.6
+    schema: olm.bundle
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:fd0b49111f0e37b5150599867822504346ce2c7baf854fb128f2a5c2a1102e5b
+    name: rhtpa-operator.v3.0.0
     schema: olm.bundle
   - defaultChannel: stable-v1.1
     name: rhtpa-operator
