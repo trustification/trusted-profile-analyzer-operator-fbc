@@ -40,7 +40,7 @@ entries:
   - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:9e20678eadefac7622a0faf0c5574333ff82b76b3f8eb0f38aa2d4c47036c517
     name: rhtpa-operator.v3.0.0
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:0ac3c87e2c5566e45887b92e929b06203cddf848c4ab069f76a5ca5948c4661b
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:481c502b132a9f0e63886222179dedf815481fa835bcd83cc1287b401b11bc1a
     name: rhtpa-operator.v3.1.0
     schema: olm.bundle
   - defaultChannel: stable-v3
