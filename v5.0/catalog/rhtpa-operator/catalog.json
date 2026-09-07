@@ -503,7 +503,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v1.1.8",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:8cbed5e56f693521fd214f8727538bb4d511f4574446040781696b533acae892",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:be0c7d00799e08912216aca36280d60e7415eeaace3e78fcf8a45a229400af1e",
     "properties": [
         {
             "type": "olm.gvk",
@@ -526,10 +526,10 @@
                 "annotations": {
                     "alm-examples": "[\n  {\n    \"apiVersion\": \"rhtpa.io/v1\",\n    \"kind\": \"TrustedProfileAnalyzer\",\n    \"metadata\": {\n      \"name\": \"trustedprofileanalyzer-sample\"\n    },\n    \"spec\": {\n      \"appDomain\": \"change-me\",\n      \"collector\": {},\n      \"database\": {},\n      \"image\": {},\n      \"infrastructure\": {\n        \"port\": 9010\n      },\n      \"ingress\": {},\n      \"metrics\": {\n        \"enabled\": false\n      },\n      \"modules\": {\n        \"createDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"createImporters\": {\n          \"enabled\": false,\n          \"image\": {},\n          \"importers\": {}\n        },\n        \"importer\": {\n          \"concurrency\": 1,\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {},\n          \"workingDirectory\": {\n            \"size\": \"32Gi\"\n          }\n        },\n        \"migrateDatabase\": {\n          \"enabled\": false,\n          \"image\": {}\n        },\n        \"server\": {\n          \"enabled\": true,\n          \"image\": {},\n          \"infrastructure\": {},\n          \"ingress\": {},\n          \"metrics\": {},\n          \"replicas\": 1,\n          \"resources\": {\n            \"requests\": {\n              \"cpu\": 1,\n              \"memory\": \"8Gi\"\n            }\n          },\n          \"rust\": {},\n          \"tracing\": {}\n        }\n      },\n      \"oidc\": {\n        \"clients\": {\n          \"cli\": {\n            \"clientSecret\": null\n          },\n          \"frontend\": {}\n        }\n      },\n      \"openshift\": {\n        \"useServiceCa\": true\n      },\n      \"partOf\": \"trustify\",\n      \"replicas\": 1,\n      \"rust\": {},\n      \"storage\": {},\n      \"tls\": {},\n      \"tracing\": {\n        \"enabled\": false\n      }\n    }\n  }\n]",
                     "capabilities": "Basic Install",
-                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:a6fca8ad680207a22dd373a3201cecb99c617de70998ac9d4c69a20d6382b661",
+                    "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:c584af337d7bbe7bd149d23fe5e23421deda7278acbe81f99dd548e57cb239f2",
                     "repository": "https://github.com/trustification/trusted-profile-analyzer-operator",
                     "support": "Red Hat",
-                    "createdAt": "2026-8-25T16:04:16Z",
+                    "createdAt": "2026-9-07T16:04:16Z",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
                     "features.operators.openshift.io/csi": "false",
@@ -598,18 +598,18 @@
                 },
                 "name": "rhtpa-operator.v1.1.8",
                 "version": "1.1.8",
-                "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:a6fca8ad680207a22dd373a3201cecb99c617de70998ac9d4c69a20d6382b661"
+                "containerImage": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:c584af337d7bbe7bd149d23fe5e23421deda7278acbe81f99dd548e57cb239f2"
             }
         }
     ],
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:8cbed5e56f693521fd214f8727538bb4d511f4574446040781696b533acae892"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:be0c7d00799e08912216aca36280d60e7415eeaace3e78fcf8a45a229400af1e"
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:a6fca8ad680207a22dd373a3201cecb99c617de70998ac9d4c69a20d6382b661"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:c584af337d7bbe7bd149d23fe5e23421deda7278acbe81f99dd548e57cb239f2"
         }
     ]
 }
