@@ -51,6 +51,8 @@ entries:
     replaces: rhtpa-operator.v1.1.6
   - name: rhtpa-operator.v1.1.8
     replaces: rhtpa-operator.v1.1.7
+  - name: rhtpa-operator.v1.1.9
+    replaces: rhtpa-operator.v1.1.8
 ---
 schema: olm.channel
 name: stable-v3
