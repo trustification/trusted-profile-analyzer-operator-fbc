@@ -19,16 +19,18 @@ spec:
     #    - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-3-0-z
     #  source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
 
+    # 3.1.z: still shipped by the v4.19 - v4.22 fragments
     - mirrors:
-       - quay.io/redhat-user-workloads/trusted-content-tenant/operator-3-1-z
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-3-1-z
       source: registry.redhat.io/rhtpa/rhtpa-rhel10-operator
     - mirrors:
-      - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-3-1-z
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-3-1-z
       source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
-    
-    # - mirrors:
-    #  - quay.io/redhat-user-workloads/trusted-content-tenant/operator-3-2-z
-    #  source: registry.redhat.io/rhtpa/rhtpa-rhel10-operator
-    # - mirrors:
-    #  - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-3-2-z
-    #  source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
+
+    # 3.2.z: shipped by the v5.0 fragment
+    - mirrors:
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-3-2-z
+      source: registry.redhat.io/rhtpa/rhtpa-rhel10-operator
+    - mirrors:
+        - quay.io/redhat-user-workloads/trusted-content-tenant/operator-bundle-3-2-z
+      source: registry.redhat.io/rhtpa/rhtpa-operator-bundle
