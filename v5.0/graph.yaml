@@ -7,7 +7,7 @@ entries:
 ---
 schema: olm.template.basic
 entries:
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:7a855c44edcb9cde541f02010fb0c1000937d27e0b6e024ae23d0f6fbe93f9e7
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:c57d564fa314d69b8da2df949623b711139144d14d7f38047ab835f222de044a
     name: rhtpa-operator.v3.2.0
     schema: olm.bundle
   - defaultChannel: stable-v3
