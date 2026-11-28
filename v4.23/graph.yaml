@@ -13,19 +13,19 @@ entries:
 ---
 schema: olm.template.basic
 entries:
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:9e20678eadefac7622a0faf0c5574333ff82b76b3f8eb0f38aa2d4c47036c517
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:62101d05688550013ea818845a9b65c22d2c6c549e773e7e227a95371805da10
     name: rhtpa-operator.v3.0.0
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:065436a2914d255c1e0128b84c71493427e32f5b0b0a4389d29aa7b863521069
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:62101d05688550013ea818845a9b65c22d2c6c549e773e7e227a95371805da10
     name: rhtpa-operator.v3.0.1
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:57ace2702ec371d32aada8e126b0a49922f613ae8c9617a0eba20e70a4d5ed86
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:62101d05688550013ea818845a9b65c22d2c6c549e773e7e227a95371805da10
     name: rhtpa-operator.v3.1.0
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:7da134abb067eb2f28be8172e7e9ea1ae648de777bf2804b131ed5160c90ca1e
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:62101d05688550013ea818845a9b65c22d2c6c549e773e7e227a95371805da10
     name: rhtpa-operator.v3.1.1
     schema: olm.bundle
-  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:3dba4b16f5bddb675e1672c1777e998bc4632d7c8c363a5c06d3e36fa2ef794a
+  - image: registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:62101d05688550013ea818845a9b65c22d2c6c549e773e7e227a95371805da10
     name: rhtpa-operator.v3.1.2
     schema: olm.bundle
   - defaultChannel: stable-v3
